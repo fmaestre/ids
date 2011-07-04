@@ -1,5 +1,12 @@
 Ids::Application.routes.draw do
-  get "welcome/index"
+  resources :users
+
+  match '/signup',  :to => 'users#new'
+  match '/show',    :to => 'users#show'
+  match '/contact', :to => 'welcome#contact'
+  match '/about',   :to => 'welcome#about'
+  match '/help',    :to => 'welcome#help'
+  match '/index',   :to => 'welcome#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,0 +1,58 @@
+ <div id="innerholder">
+    <h3><span>Crear usuario</span><hr></h3>
+
+<%= form_for(@user) do |f| %>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label :password_confirmation, "Confirmation" %><br />
+    <%= f.password_field :password_confirmation %>
+  </div>
+  <div class="button round">
+    <%= f.submit "Sign up" %>
+  </div>
+<% end %>
+</div>
+<!--
+ <div id="innerholder">
+    <h3><span>Crear usuario</span><hr></h3>
+	
+ <div id="label"><b>Usuario :</b></div>
+ <div class="roundedfield" >  
+      <input name="id" type="text"/>
+ </div>
+ 
+ <div id="label"><b>Correo :</b></div>
+ <div class="roundedfield" >  
+      <input name="email" type="text"/>
+ </div>
+ 
+ <div id="label"><b>Password :</b></div>
+ <div class="roundedfield" >  
+      <input name="pass" type="password"/>
+ </div>
+ 
+ <div id="label"><b>Repite Password :</b></div>
+ <div class="roundedfield" >  
+      <input name="pass2" type="password"/>
+ </div>
+ 
+<div>
+ <ul>
+    <li>	
+		<span><%= link_to "Guardar", about_path,:class => "button round"  %></span>
+		<span><%= link_to "Cancelar", about_path,:class => "button round"  %></span>
+	</li>
+<ul/>
+</div>
+-->
